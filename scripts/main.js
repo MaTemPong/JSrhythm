@@ -3,7 +3,10 @@ const tileBtns = document.querySelectorAll(".tileBtn");
 const tileLines = document.querySelectorAll(".tileLine");
 const video = document.getElementById('youtube')
 const verdict = document.querySelector('.verdict h3')
-let isOnce = false
+const comboText = document.querySelector('.verdict h4')
+const scoreText = document.querySelector('.score')
+let score = 0;
+let combo = 0;
 const keyMap = {
   "a": {
     "idx" : 0,
@@ -60,6 +63,7 @@ drum.forEach((item,idx) =>{
 
 video.volume = 0
 
+
 let bitmap;
 const fetchData = () => fetch("../scripts/song.json").then((response) => response.json());
 
@@ -96,12 +100,48 @@ const KeyUpAnim = (idx) => {
 
 window.addEventListener("keydown", ({ key }) => {
   if(keys.includes(key)){
+    keyMap[key].isOnce = true;
     const idx = keyMap[key].idx;
     !isNaN(idx) && keyDownAnim(idx);
-    keyMap[key].isOnce = true;
   }
-  
 });
+
+let isPushed = false;
+
+window.addEventListener("keypress", ({ key })=>{
+  if(keys.includes(key)){
+    const idx = keyMap[key].idx;
+    const firstTile = tileLines[idx].children[0];
+    const firstTileBottom = firstTile.style.bottom.slice(0, -1);
+    if(0 <= firstTileBottom && firstTileBottom <= 50){
+      if(0 <= firstTileBottom && firstTileBottom <= 15){
+        verdict.textContent = "Perfect"
+        verdict.style.color = 'rgb(186, 0, 228)'
+        score += 300;
+        combo++;
+      } else if(15 < firstTileBottom && firstTileBottom <= 25){
+        verdict.textContent = "Great"
+        verdict.style.color = 'gold'
+        score += 200;
+        combo++;
+      } else if(25 < firstTileBottom && firstTileBottom <= 35){
+        verdict.textContent = "Good"
+        verdict.style.color = 'rgb(50, 128, 81)'
+        score += 100;
+        combo++;
+      }
+      else{
+        verdict.textContent = "Miss"
+        verdict.style.color = 'black'
+        combo = 0;
+      }
+      firstTile.remove();
+      comboText.textContent = combo;
+      scoreText.textContent = score;
+    }
+  }
+})
+
 window.addEventListener("keyup", ({ key }) => {
   if(keys.includes(key)){
     const idx = keyMap[key].idx;
@@ -116,48 +156,19 @@ const tileAnim = (idx,time,type) => {
   tileLines[idx].append(tile)
   let yPos = 100
   const startTime = performance.now()
-  let rhythem = false
 
   const anim = (timestamp)=>{
     const progress = (timestamp - startTime) / 1000
     tile.style.bottom = `${yPos}%`
     yPos = 100 - Math.min(progress * 100)
-    const firstTile = tileLines[idx].children[0];
-    let firstTileBottom = firstTile?.style.bottom.slice(0, -1);
-    document.addEventListener('keydown', ({key}) => {
-      let isChecked = false; 
-      if(keys.includes(key)){
-        isChecked = !rhythem && !keyMap[key].isOnce && idx === keyMap[key].idx;
-      }
-      if (isChecked) {
-        console.log(firstTileBottom)
-        if (3 <= firstTileBottom && firstTileBottom <= 20) {
-          verdict.textContent = "Perfect";
-          rhythem = true; 
-        } else if(2 <= firstTileBottom && firstTileBottom <= 30){
-          verdict.textContent = "Great";
-          rhythem = true; 
-        } else if(0 < firstTileBottom && firstTileBottom <= 40){
-          verdict.textContent = "Good";
-          rhythem = true; 
-        } else if(0 <= firstTileBottom && firstTileBottom <= 50){
-          verdict.textContent = "Miss";
-          rhythem = true;
-        }
-        if (0 <= firstTileBottom && firstTileBottom <= 50) {
-          firstTile.remove();
-        }
-      }
-    })
     if(yPos > 0){
       requestAnimationFrame(anim)
     } 
     else {
-      if(!rhythem){
-        verdict.textContent = "Miss";
+      if(!tile){
+        verdict.textContent('Miss')
       }
       tile.remove();
-      rhythem = true;
     } 
   }
   requestAnimationFrame(anim)
