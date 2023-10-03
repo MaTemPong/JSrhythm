@@ -64,7 +64,7 @@ piano = [
 drum.forEach((item,idx) =>{
   drum[idx].volume = 1.0;
 });
-
+drum[3].volume = 0.4;
 video.volume = 0.3;
 
 
