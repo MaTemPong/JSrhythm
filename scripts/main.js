@@ -42,6 +42,8 @@ drum = [
   new Audio('./sounds/킥.wav'),
   new Audio('./sounds/스네어.wav'),
   new Audio('./sounds/하이햇.wav'),
+  new Audio('./sounds/크래쉬 심벌.wav'),
+  new Audio('./sounds/하이햇.wav'),
 ];
 
 piano = [
@@ -61,7 +63,7 @@ drum.forEach((item,idx) =>{
   drum[idx].volume = 1.0;
 })
 
-video.volume = 0
+video.volume = 0.3
 
 
 let bitmap;
