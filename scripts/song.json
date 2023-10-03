@@ -244,12 +244,12 @@
     },
     {
         "lineNum" : 5,
-        "time" : 26.7,
+        "time" : 26.6,
         "type" : "short"
     },
     {
         "lineNum" : 6,
-        "time" : 26.9,
+        "time" : 26.8,
         "type" : "short"
     },
     {
@@ -449,6 +449,544 @@
     {
         "lineNum" : 4,
         "time" : 33.1,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 47,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 1,
+        "time" : 47.2,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 47.4,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 1,
+        "time" : 47.6,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 0,
+        "time" : 47.8,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 1,
+        "time" : 47.8,
+        "type" : "short"
+    },
+
+
+    {
+        "lineNum" : 2,
+        "time" : 48.4,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 48.9,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 49.2,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 49.9,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 50.4,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 50.9,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 51.4,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 52,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 52.5,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 52.9,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 53.4,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 53.8,
+        "type" : "short"
+    },
+
+
+    {
+        "lineNum" : 4,
+        "time" : 54.6,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 1,
+        "time" : 54.8,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 55,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 1,
+        "time" : 55.2,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 0,
+        "time" : 55.4,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 1,
+        "time" : 55.4,
+        "type" : "short"
+    },
+
+
+    {
+        "lineNum" : 4,
+        "time" : 56,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 56.5,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 56.8,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 57.5,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 58,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 58.5,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 59,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 59.6,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 60.1,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 60.5,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 61,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 61.4,
+        "type" : "short"
+    },
+
+
+    {
+        "lineNum" : 2,
+        "time" : 61.7,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 62,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 62.3,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 62.6,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 62.9,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 63.2,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 63.5,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 63.8,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 64.1,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 64.4,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 64.7,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 65,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 65.3,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 65.6,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 65.9,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 66.2,
+        "type" : "short"
+    },
+
+    
+    {
+        "lineNum" : 4,
+        "time" : 66.4,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 66.6,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 66.8,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 67,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 67.2,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 67.4,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 67.6,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 67.8,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 68,
+        "type" : "short"
+    },
+
+
+    {
+        "lineNum" : 2,
+        "time" : 69,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 69.3,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 69.6,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 69.9,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 70.2,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 70.5,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 70.8,
+        "type" : "short"
+    },{
+        "lineNum" : 2,
+        "time" : 71.1,
+        "type" : "short"
+    },{
+        "lineNum" : 2,
+        "time" : 71.4,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 71.7,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 72,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 72.3,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 72.6,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 72.9,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 73.2,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 73.4,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 73.6,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 73.8,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 74,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 74.2,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 74.4,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 74.6,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 74.8,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 75,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 75.2,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 75.4,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 75.6,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 75.8,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 2,
+        "time" : 76,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 3,
+        "time" : 76.6,
+        "type" : "short"
+    },
+
+
+    {
+        "lineNum" : 1,
+        "time" : 77,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 77,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 1,
+        "time" : 78,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 78,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 1,
+        "time" : 79,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 79,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 1,
+        "time" : 81,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 81,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 1,
+        "time" : 82,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 82,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 1,
+        "time" : 82.7,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 82.7,
+        "type" : "short"
+    },
+    
+    {
+        "lineNum" : 1,
+        "time" : 84,
+        "type" : "short"
+    },
+    {
+        "lineNum" : 4,
+        "time" : 84,
         "type" : "short"
     },
 
