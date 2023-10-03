@@ -123,26 +123,28 @@ const tileAnim = (idx,time,type) => {
     tile.style.bottom = `${yPos}%`
     yPos = 100 - Math.min(progress * 100)
     const firstTile = tileLines[idx].children[0];
+    let firstTileBottom = firstTile?.style.bottom.slice(0, -1);
     document.addEventListener('keydown', ({key}) => {
       let isChecked = false; 
       if(keys.includes(key)){
         isChecked = !rhythem && !keyMap[key].isOnce && idx === keyMap[key].idx;
       }
       if (isChecked) {
-        if (3 <= yPos && yPos <= 20) {
+        console.log(firstTileBottom)
+        if (3 <= firstTileBottom && firstTileBottom <= 20) {
           verdict.textContent = "Perfect";
           rhythem = true; 
-        } else if(2 <= yPos && yPos <= 30){
+        } else if(2 <= firstTileBottom && firstTileBottom <= 30){
           verdict.textContent = "Great";
           rhythem = true; 
-        } else if(0 < yPos && yPos <= 40){
+        } else if(0 < firstTileBottom && firstTileBottom <= 40){
           verdict.textContent = "Good";
           rhythem = true; 
-        } else if(0 <= yPos && yPos <= 50){
+        } else if(0 <= firstTileBottom && firstTileBottom <= 50){
           verdict.textContent = "Miss";
           rhythem = true;
         }
-        if (0 <= yPos && yPos <= 50) {
+        if (0 <= firstTileBottom && firstTileBottom <= 50) {
           firstTile.remove();
         }
       }
@@ -153,7 +155,6 @@ const tileAnim = (idx,time,type) => {
     else {
       if(!rhythem){
         verdict.textContent = "Miss";
-        console.log("내가 범인임 ㅇㅇ")
       }
       tile.remove();
       rhythem = true;
