@@ -41,6 +41,8 @@ drum = [
   new Audio('./sounds/하이햇.wav'),
   new Audio('./sounds/크래쉬 심벌.wav'),
   new Audio('./sounds/하이햇.wav'),
+  new Audio('./sounds/하이탐.wav'),
+  new Audio('./sounds/미드탐.wav'),
 ];
 
 piano = [
@@ -58,9 +60,9 @@ piano = [
 
 drum.forEach((item,idx) =>{
   drum[idx].volume = 1.0;
-})
+});
 
-video.volume = 0.3
+video.volume = 0.3;
 
 let bitmap;
 const fetchData = () => fetch("../scripts/song.json").then((response) => response.json());
