@@ -143,5 +143,18 @@ body {
     text-align: center;
     width: 100%;
     top: 70%;
+    z-index: 500;
+    -webkit-text-stroke: 0.5px white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.verdict h3{
+    font-size: 3rem;
+    width: 30%;
+}
+.verdict h4{
     font-size: 2rem;
 }
