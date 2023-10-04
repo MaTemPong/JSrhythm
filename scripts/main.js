@@ -65,7 +65,7 @@ drum.forEach((item,idx) =>{
   drum[idx].volume = 1.0;
 });
 drum[3].volume = 0.4;
-video.volume = 0.3;
+// video.volume = 0.3;
 
 
 let bitmap;
@@ -180,4 +180,9 @@ const tileAnim = (idx,time,type) => {
 
 const soundManager = (inputSound) => {
   inputSound.play();
+}
+
+if(localStorage.getItem('sound')){
+  var lastData = localStorage.getItem('sound');
+  video.volume = lastData;
 }
