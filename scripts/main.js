@@ -75,7 +75,7 @@ async function start(){
   bitmap = await fetchData();
   
   bitmap.forEach((item, index) => {
-    setTimeout(() => tileAnim(item.lineNum, item.time), (item.time - 1)*1000)
+    setTimeout(() => tileAnim(item.lineNum, item.time, index), (item.time - 1)*1000)
   });
 }
 video.addEventListener('loadeddata', start);
@@ -112,11 +112,14 @@ window.addEventListener("keydown", ({ key }) => {
 
 let isPushed = false;
 
+let tileCheck = [];
 window.addEventListener("keypress", ({ key })=>{
   if(keys.includes(key)){
     const idx = keyMap[key].idx;
     const firstTile = tileLines[idx].children[0];
+    if(!firstTile) return;
     const firstTileBottom = firstTile.style.bottom.slice(0, -1);
+    const currentTileIdx = firstTile.getAttribute('idx');
     if(0 <= firstTileBottom && firstTileBottom <= 50){
       if(0 <= firstTileBottom && firstTileBottom <= 15){
         verdict.textContent = "Perfect"
@@ -140,6 +143,7 @@ window.addEventListener("keypress", ({ key })=>{
         combo = 0;
       }
       firstTile.remove();
+      tileCheck[currentTileIdx] = true;
       comboText.textContent = combo;
       scoreText.textContent = score;
     }
@@ -154,9 +158,10 @@ window.addEventListener("keyup", ({ key }) => {
   }
 });
 
-const tileAnim = (idx,time,type) => {
+const tileAnim = (idx,time,ind) => {
   const tile = document.createElement('div')
   tile.className = 'tile'
+  tile.setAttribute("idx", ind);
   tileLines[idx].append(tile)
   let yPos = 100
   const startTime = performance.now()
@@ -165,13 +170,17 @@ const tileAnim = (idx,time,type) => {
     const progress = (timestamp - startTime) / 1000
     tile.style.bottom = `${yPos}%`
     yPos = 100 - Math.min(progress * 100)
-    if(yPos > 0){
+    if(yPos >= 0){
       requestAnimationFrame(anim)
     } 
     else {
-      if(!tile){
-        verdict.textContent('Miss')
-      }
+      if(tileCheck[ind]) return;
+      verdict.textContent = 'Miss'
+      verdict.style.color = 'black'
+      combo = 0;
+      comboText.textContent = combo;
+      scoreText.textContent = score;
+      
       tile.remove();
     } 
   }

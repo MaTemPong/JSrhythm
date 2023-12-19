@@ -1,6 +1,6 @@
 const btns = document.querySelectorAll('.buttonBox button');
 const dialog = document.querySelector('dialog');
-let sound;
+const sound = document.querySelector('input');
 
 btns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -22,8 +22,3 @@ btns.forEach(btn => {
 document.querySelector('dialog #modal p').addEventListener('click', () => {
     dialog.close();
 });
-
-setInterval(()=>{
-    sound = document.querySelector('input');
-    console.log(sound.value, sound.value/10);
-}, 1000);
